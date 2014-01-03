@@ -36,7 +36,7 @@ def Producer():
 	for url in urls: 
 		queue.put(url)	
 	# Add the poison pillv
-	for worker i worker_threads:
+	for worker in worker_threads:
 		queue.put('quit')
 	for worker in worker_threads:
 		worker.join()
